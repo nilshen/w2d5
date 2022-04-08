@@ -22,7 +22,7 @@ class Flight
     end
 
     def list_passengers
-        @passengers.map {|person|person.name}
+        @passengers.map(&:name)
     end
 
     def [](index)
